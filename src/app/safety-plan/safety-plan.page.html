@@ -1,12 +1,112 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Safety Plan</ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title text-left>Essentia</ion-title>
+      <ion-buttons slot="primary">
+        <ion-button>
+          <ion-icon name="notifications"></ion-icon>
+          </ion-button>
+        <ion-button>
+            <ion-icon name="share"></ion-icon>
+        </ion-button>
+        <ion-button>
+            <ion-icon name="search"></ion-icon>
+        </ion-button>
+        <ion-button>
+            <ion-icon name="add"></ion-icon>
+        </ion-button>   
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+<ion-content class="ion-padding">
+    <div class="bar bar-header">
+        <h2 class="title">Your Safety Plan</h2>
+    </div>
+    <ion-card>
+        <ion-item>
+          <ion-buttons slot="end">
+            <ion-button>
+              <ion-icon name="create"></ion-icon>
+            </ion-button>
+            <ion-button>
+                <ion-icon name="information-circle"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+            
+          <ion-label>Coping Strategies</ion-label>
+          </ion-item>
+        <ion-card-content>
+            <ion-list *ngFor="let strategy of copingStrategies">
+                <ion-item>
+                  <ion-label>{{strategy.name}}</ion-label>
+                </ion-item>
+              </ion-list>
+        </ion-card-content>
+      </ion-card>   
 
-<ion-content>
+      <ion-card>
+        <ion-item>
+          <ion-buttons slot="end">
+            <ion-button>
+              <ion-icon name="create"></ion-icon>
+            </ion-button>
+            <ion-button>
+              <ion-icon name="information-circle"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+            <ion-label>Reasons to Live</ion-label>
+          </ion-item>
+        <ion-card-content>
+            <ion-list *ngFor="let reasonToLive of reasonsToLive">
+                <ion-item>
+                  <ion-label>{{reasonToLive.name}}</ion-label>
+                </ion-item>
+              </ion-list>
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card>
+        <ion-item>
+            <ion-buttons slot="end">
+                <ion-button>
+                  <ion-icon name="create"></ion-icon>
+                </ion-button>
+                <ion-button>
+                    <ion-icon name="information-circle"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            <ion-label>Emergency Contacts</ion-label>
+          </ion-item>
+        <ion-card-content>
+          <ion-list *ngFor="let contact of emergencyContacts">
+            <ion-item>
+              <ion-label>{{contact.name}}</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
 
+      <ion-card>
+          <ion-item>
+              <ion-buttons slot="end">
+                  <ion-button>
+                    <ion-icon name="create"></ion-icon>
+                  </ion-button>
+                  <ion-button>
+                      <ion-icon name="information-circle"></ion-icon>
+                  </ion-button>
+                </ion-buttons>
+              <ion-label>Places to Go</ion-label>
+            </ion-item>
+          <ion-card-content>
+            <ion-list *ngFor="let place of placesToGo">
+              <ion-item>
+                <ion-label>{{place.name}}</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
 </ion-content>
+

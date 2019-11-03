@@ -10,12 +10,12 @@ import { filter } from 'minimatch';
 })
 export class TabsService {
   private hideTabBarPages: string[] = [
-    'info',
   ];
 
   routeParamPages: string[] = [
     'safety-plan',
-    'resources'
+    'resources',
+    'info'
   ];
 
   constructor(private router: Router, private platform: Platform) { 
