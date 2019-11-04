@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   { 
     path: 'reasons-to-live', 
-    loadChildren: '../guidedMode/reasons-to-live/reasons-to-live.module#ReasonsToLivePageModule' 
+    loadChildren: '../reasons-to-live/reasons-to-live.module#ReasonsToLivePageModule' 
   },
 ];
 

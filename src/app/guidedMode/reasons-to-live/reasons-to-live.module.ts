@@ -11,7 +11,16 @@ const routes: Routes = [
   {
     path: '',
     component: ReasonsToLivePage
-  }
+  },
+
+  { 
+    path: 'emergengency-contacts', 
+    loadChildren: '../emergengency-contacts/emergengency-contacts.module#EmergengencyContactsPageModule' 
+  },
+  { 
+    path: 'safety-plan', 
+    loadChildren: '../../safety-plan/safety-plan.module#SafetyPlanPageModule' 
+  },
 ];
 
 @NgModule({

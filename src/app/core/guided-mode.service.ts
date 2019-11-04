@@ -30,9 +30,25 @@ export class GuidedModeService {
     }
   ];
 
+  private reasonsToLive = [
+    {
+      id: 1,
+      name: 'Max',
+      recommendations: [
+        {
+          text: 'Thing about the things that bring you joy in life'
+        }
+      ]
+    }
+  ]
+
   getStrategies(){
     return this.copingStrategies;
   }
   
+  getReasonsToLive(){
+    return this.reasonsToLive;
+  }
+
   constructor() { }
 }
