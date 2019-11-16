@@ -14,7 +14,6 @@ export class CopingStrategiesPage implements OnInit {
   disablePrevBtn = true;
   disableNextBtn = false;
   sliderConfig = {
-    onlyExternal: false
   };
 
   getNextSlide(){
