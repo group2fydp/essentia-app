@@ -14,15 +14,11 @@ export class ReasonsToLivePage implements OnInit {
   disablePrevBtn = true;
   disableNextBtn = false;
   sliderConfig = {
-<<<<<<< HEAD
     onlyExternal: false
   };
-
-=======
-  };
+  
 
 
->>>>>>> 67284f1d630e3a54d0685719ab541f2a7b9348a8
   getNextSlide(){
     this.slides.slideNext();
   }
@@ -40,10 +36,7 @@ export class ReasonsToLivePage implements OnInit {
       data[1] ? this.disableNextBtn = true : this.disableNextBtn = false;
     });
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> 67284f1d630e3a54d0685719ab541f2a7b9348a8
   constructor(private guidedModeService: GuidedModeService, private router: Router) { }
 
   ngOnInit() {
