@@ -11,16 +11,7 @@ const routes: Routes = [
   {
     path: '',
     component: CopingStrategiesPage
-  },
-
-  { 
-    path: 'safety-plan', 
-    loadChildren: '../../safety-plan/safety-plan.module#SafetyPlanPageModule' 
-  },
-  { 
-    path: 'reasons-to-live', 
-    loadChildren: '../guidedMode/reasons-to-live/reasons-to-live.module#ReasonsToLivePageModule' 
-  },
+  }
 ];
 
 @NgModule({

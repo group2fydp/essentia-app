@@ -30,8 +30,22 @@ export class GuidedModeService {
     }
   ];
 
+  private reasonsToLive = [
+    {
+      
+        id: 1,
+        name: 'Max',
+        imgUrl: '',
+        skipBtnText: 'Next'
+    }
+  ];
+
   getStrategies(){
     return this.copingStrategies;
+  }
+
+  getReasonsToLive(){
+    return this.reasonsToLive;
   }
   
   constructor() { }

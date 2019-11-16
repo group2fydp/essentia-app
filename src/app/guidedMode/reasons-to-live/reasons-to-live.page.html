@@ -1,9 +1,52 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>reasonsToLive</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title text-left>Essentia</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon name="notifications"></ion-icon>
+        </ion-button>
+      <ion-button>
+          <ion-icon name="share"></ion-icon>
+      </ion-button>
+      <ion-button>
+          <ion-icon name="search"></ion-icon>
+      </ion-button>
+      <ion-button>
+          <ion-icon name="add"></ion-icon>
+      </ion-button>   
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+  <div class="bar bar-header">
+      <h2 class="title">Your Safety Plan</h2>
+  </div>
+  <div>
+    <a routerLink="/safety-plan">Exit Guided Mode</a>
+  </div>
+  <ion-card>
+      <ion-item>          
+        <ion-label>Reasons to Live</ion-label>
+      </ion-item>
+      <ion-card-content>
+        <ion-slides class="swiper-no-swiping" (ionSlideWillChange)="doCheck()" #slides [options]="sliderConfig">
+          <ion-slide *ngFor="let r of reasons">
+            <ion-card>
+              <ion-card-title>{{r.id}}. {{r.name}}</ion-card-title>
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+        <div>
+            <a routerLink="/emergengency-contacts">Contacts</a>
+        </div>
+      </ion-card-content>
+    </ion-card> 
 
+    
 </ion-content>
+
+
