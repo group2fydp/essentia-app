@@ -39,7 +39,7 @@
               <ion-card-title>{{strategy.id}}. {{strategy.name}}</ion-card-title>
               <ion-card-content>
                 <div>
-                    <ion-button>{{strategy.buttonTxt}}</ion-button>
+                    <ion-button (click)="startStrategy(strategy.id)">{{strategy.buttonTxt}}</ion-button>
                     <ion-button *ngIf="!disableNextBtn" (click)="getNextSlide()">{{strategy.skipBtnText}}</ion-button>
                 </div>
                 <ion-button *ngIf="!disablePrevBtn" (click)="getPrevSlide()">Back</ion-button>

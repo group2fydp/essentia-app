@@ -14,6 +14,7 @@ export class GuidedModeService {
           externalUrl: '',
           slideImg: ''
         },
+        type: 'exercise',
         buttonTxt: 'Start Exercise',
         skipBtnText: 'Skip Exercise'
     },
@@ -25,8 +26,20 @@ export class GuidedModeService {
           cellNo: '111111111',
           slideImg: '',
         },
+        type: 'social',
         buttonTxt: 'Call Mom',
         skipBtnText: 'Skip Strategy'
+    },
+    {
+      id: 3,
+      name: 'Listen to Music',
+      info: {
+        playlistId: '37i9dQZF1DX3rxVfibe1L0',
+      },
+      type: 'music',
+      buttonTxt: 'Launch Spotify',
+      skipBtnText: 'Skip Strategy'
+
     }
   ];
 
